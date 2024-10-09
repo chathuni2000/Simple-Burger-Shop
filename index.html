@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food Burger Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Fast Food Burger Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Best Burger Place in Town!</h2>
+        <p>We offer the most variety of burgers with unbeatable prices and quick service!</p>
+    </section>
+
+    
+
+    <section id="menu" class="container mt-5">
+        <h2 class="text-center">Our Burger Menu</h2>
+        
+        <!-- Table Structure to Hold Cards in Two Rows -->
+        <table class="table table-borderless">
+            <tbody>
+                <!-- First Row of Burgers -->
+                <tr>
+                    <!-- Burger 1 -->
+                    <td>
+                        <div class="card mb-4">
+                            <img src="images/Cheesy Bacon Burger.png" class="card-img-top" alt="Cheese Burger">
+                            <div class="card-body">
+                                <h5 class="card-title">Cheese Burger</h5>
+                                <p class="card-text">A classic burger with cheese, lettuce, tomato, and our special sauce.</p>
+                                <p><strong>Price: Rs.850</strong></p>
+                                <button class="btn btn-primary" onclick="addToCart('Cheese Burger')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </td>
+    
+                    <!-- Burger 2 -->
+                    <td>
+                        <div class="card mb-4">
+                            <img src="images/butter burger.jpg" class="card-img-top" alt="Butter Burger">
+                            <div class="card-body">
+                                <h5 class="card-title">Butter Burger</h5>
+                                <p class="card-text">A healthy and delicious burger made with a veggie patty and fresh veggies.</p>
+                                <p><strong>Price: Rs.700</strong></p>
+                                <button class="btn btn-primary" onclick="addToCart('Butter Burger')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </td>
+    
+                    <!-- Burger 3 -->
+                    <td>
+                        <div class="card mb-4">
+                            <img src="images/Elk burger.jpg" class="card-img-top" alt="Elk Burger">
+                            <div class="card-body">
+                                <h5 class="card-title">Elk Burger</h5>
+                                <p class="card-text">A flavorful burger made with lean elk meat, lettuce, tomato, and onions.</p>
+                                <p><strong>Price: Rs.1000</strong></p>
+                                <button class="btn btn-primary" onclick="addToCart('Elk Burger')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+    
+                <!-- Second Row of Burgers -->
+                <tr>
+                    <!-- Burger 4 -->
+                    <td>
+                        <div class="card mb-4">
+                            <img src="images/chimicchurri burger.jpg" class="card-img-top" alt="Chimichurri Burger">
+                            <div class="card-body">
+                                <h5 class="card-title">Chimichurri Burger</h5>
+                                <p class="card-text">A classic burger with chimichurri sauce, lettuce, and tomato.</p>
+                                <p><strong>Price: Rs.950</strong></p>
+                                <button class="btn btn-primary" onclick="addToCart('Chimichurri Burger')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </td>
+    
+                    <!-- Burger 5 -->
+                    <td>
+                        <div class="card mb-4">
+                            <img src="images/French Fry Burger.png" class="card-img-top" alt="French Fry Burger">
+                            <div class="card-body">
+                                <h5 class="card-title">French Fry Burger</h5>
+                                <p class="card-text">A burger with a veggie patty, topped with crispy French fries.</p>
+                                <p><strong>Price: Rs.1100</strong></p>
+                                <button class="btn btn-primary" onclick="addToCart('French Fry Burger')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </td>
+    
+                    <!-- Burger 6 -->
+                    <td>
+                        <div class="card mb-4">
+                            <img src="images/green chile cheese burger.jpg" class="card-img-top" alt="Green Chile Burger">
+                            <div class="card-body">
+                                <h5 class="card-title">Green Chile Burger</h5>
+                                <p class="card-text">A flavorful burger with green chile, lettuce, tomato, and cheese.</p>
+                                <p><strong>Price: Rs.950</strong></p>
+                                <button class="btn btn-primary" onclick="addToCart('Green Chile Burger')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+
+    <footer>
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
